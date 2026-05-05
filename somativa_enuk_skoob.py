@@ -12,12 +12,7 @@ class Book:
     """Representa um livro na biblioteca."""
     
     def __init__(self, title: str, author: str = "") -> None:
-        """Inicializa um novo livro.
-        
-        Args:
-            title: Título do livro
-            author: Autor do livro (opcional)
-        """
+        """Inicializa um novo livro."""
         self.title: str = title
         self.author: str = author
         self.is_read: bool = False
@@ -42,14 +37,7 @@ class Book:
 
 
 def convert_to_bool(value: str) -> bool:
-    """Converte uma string em booleano.
-    
-    Args:
-        value: String a ser convertida
-        
-    Returns:
-        bool: Valor booleano equivalente
-    """
+ 
     return value.strip().lower() in ("s", "sim", "true", "1", "t", "y", "yes")
 
 
@@ -76,7 +64,7 @@ def load_library(filename: str = "biblioteca.json") -> List[Book]:
 
 
 def save_library(book_list: List[Book], filename: str = "biblioteca.json") -> None:
-    """Salva a lista de livros em um arquivo JSON."""
+    """Salva a lista de livros em um arquivo em formato JSON."""
     try:
         data = [book.to_dict() for book in book_list]
         with open(filename, 'w', encoding='utf-8') as file:
@@ -87,15 +75,7 @@ def save_library(book_list: List[Book], filename: str = "biblioteca.json") -> No
 
 
 def find_book(book_list: List[Book], title: str) -> Optional[Book]:
-    """Encontra um livro pelo título.
-    
-    Args:
-        book_list: Lista de livros
-        title: Título a buscar
-        
-    Returns:
-        Book encontrado ou None
-    """
+ 
     for book in book_list:
         if book.title.lower() == title.lower():
             return book
@@ -104,7 +84,7 @@ def find_book(book_list: List[Book], title: str) -> Optional[Book]:
 
 
 def add_book(book_list: List[Book]) -> None:
-    """Adiciona um novo livro à biblioteca."""
+    """Adiciona um livro novo à biblioteca."""
     try:
         title = input('Título do livro: ').strip()
         if not title:
@@ -263,7 +243,7 @@ def main() -> None:
 
     while True:
         print("REGRAS")
-        print("ADD(icionar), LIST(ar), UPDATE(ar), DELETE(ar), STATS, SEARCH, ABOUT ou N(sair)")
+        print("ADD(Adicionar), LIST(Listar), UPDATE(Atualizar), DELETE(Apagar), STATS(Status), SEARCH(Pesquisar), ABOUT(Sobre) ou N(sair)")
 
         command = input('O que deseja fazer agora? ').upper()
 
