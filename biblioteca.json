@@ -2,12 +2,42 @@
     {
         "titulo": "Fundacao",
         "autor": "Asimov",
-        "lido": false,
-        "historico": []
+        "lido": true,
+        "historico": [
+            [
+                "04/05/2026 23:22:01",
+                true,
+                "Fundacao"
+            ]
+        ]
     },
     {
         "titulo": "Blade Runner",
         "autor": "Philip K Dick",
+        "lido": false,
+        "historico": []
+    },
+    {
+        "titulo": "Flores para Algernon",
+        "autor": "Daniel Keyes",
+        "lido": true,
+        "historico": [
+            [
+                "04/05/2026 23:22:21",
+                true,
+                "Flores para Algernon"
+            ]
+        ]
+    },
+    {
+        "titulo": "o Planeta dos Macacos",
+        "autor": "Pierre Boulle",
+        "lido": false,
+        "historico": []
+    },
+    {
+        "titulo": "Materia Escura",
+        "autor": "Blake Crouch",
         "lido": false,
         "historico": []
     }
