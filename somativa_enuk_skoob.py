@@ -3,7 +3,7 @@ from typing import List, Optional, Dict, Any
 import json
 import os
 
-"""Projeto de Somativa 2 da PUCPR, foi utilizado a base da somativa 1, formativa 4,5,6 e cursos da ALURA para criar esse código. 
+"""Projeto de Somativa final da matéria raciocínio computacional da PUCPR, foi utilizado a base da somativa 1, formativa 4,5,6 e cursos da ALURA para criar esse código. 
 Antes ele criava um projeto porem como eu gosto batante de ler resolvi mudar para livros. 
 Inspiração para o projeto: App skoob."""
 
