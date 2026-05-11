@@ -68,4 +68,5 @@ Cada livro é salvo com a estrutura abaixo:
 
 ## Autor
 
-- Enuk
+- Enuk dos Santos Alves Nogueira(Programador)
+- Guilherme Biassi(Ideias)
